@@ -1,0 +1,214 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context=".activity_main">
+
+    <RelativeLayout
+        android:id="@+id/title_main"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#000">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/person"
+            android:src="@drawable/person"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_main"
+        android:background="#FF622C"
+        android:padding="16dp">
+
+        <com.example.sinotl.guofufinance.utils.CircleImageView
+            android:id="@+id/image_head"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/demo"
+            tools:border_color="@color/dark"
+            tools:border_width="2dp"/>
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:text="立即登录"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="开  启  财  富  之  路"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_head"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF4F45"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/zhitou"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="散标直投"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF4F45"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/project"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="众筹项目"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:layout_width="1dip"
+            android:layout_height="match_parent"
+            android:background="#fff"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF4F45"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/jiekuan"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:text="我要借款"
+            android:textColor="#fff"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/news_gonggao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_main"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新闻公告"
+                android:textColor="#000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多"
+                android:textColor="#ccc"
+                android:textSize="15sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="牛市啊收到两份骄"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="牛市啊收到两份骄牛市啊收到两份骄牛市啊牛市啊收到两份骄收到两份骄牛市啊收到两份骄牛市啊收到两份骄"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/main_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/news_gonggao"
+        android:scrollbars="none">
+    </ListView>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/first"
+            android:gravity="center_horizontal"
+            android:text="首页"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/xiangmu"
+            android:gravity="center_horizontal"
+            android:text="项目"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/mymoney"
+            android:gravity="center_horizontal"
+            android:text="我的资产"/>
+    </RadioGroup>
+
+</RelativeLayout>

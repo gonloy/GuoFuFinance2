@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GuoFuFinance</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_zhi_tou">ZhiTou</string>
+    <string name="title_activity_zhi_tou_detail">ZhiTou_detail</string>
+    <string name="title_activity_save__safe">Save_Safe</string>
+    <string name="title_activity_product__detail">Product_Detail</string>
+    <string name="title_activity_shan_biao_zhi_tou">ShanBiaoZhiTou</string>
+    <string name="title_activity_regist">Regist</string>
+    <string name="title_activity_message">Message</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="title_activity_my_tou_zi">MyTouZi</string>
+    <string name="title_activity_about_me">AboutMe</string>
+</resources>
